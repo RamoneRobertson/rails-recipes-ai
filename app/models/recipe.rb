@@ -1,5 +1,7 @@
 class Recipe < ApplicationRecord
   # def content
+  #  Rails cache.fetch will store the value calculated so that when you reload/refresh it doesnt have to make another request. Instead it keeps the value calculated previously
+  #  The value will be stored until time expires or there is a change to the object key
   #   Rails.cache.fetch("#{cache_key_with_version}/content") do
   #     # Create a new openai client
   #     client = OpenAI::Client.new
