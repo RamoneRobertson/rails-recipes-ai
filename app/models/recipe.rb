@@ -1,6 +1,7 @@
 class Recipe < ApplicationRecord
   # after a save is made, if the name or ingredients have changed we get new content from chatgpt to upadte our recipe object
   after_save :set_content, if: -> { saved_change_to_name? || saved_change_to_ingredients? }
+  has_one_attached :photo
 
   # We only load content from chatgpt if the content is blank.
   # Otherwise we just load the static string that is already stored in the database
