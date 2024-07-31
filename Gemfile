@@ -52,6 +52,7 @@ gem "sassc-rails"
 
 # Manually added gems
 gem "ruby-openai"
+gem "cloudinary"
 
 group :development, :test do
   gem "dotenv-rails"
