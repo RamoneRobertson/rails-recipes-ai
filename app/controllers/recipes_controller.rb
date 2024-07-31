@@ -8,6 +8,7 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1
   def show
+
   end
 
   # GET /recipes/new
