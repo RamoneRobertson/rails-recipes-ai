@@ -7,6 +7,7 @@
     <strong>Ingredients:</strong>
     <%= recipe.ingredients %>
   </p>
+  <%= cl_image_tag(recipe.photo.key, alt: "AI generated image of your recipe") if recipe.photo.attached?  %>
   <p>
     <strong>How to Make</strong>
     <%= recipe.content %>
